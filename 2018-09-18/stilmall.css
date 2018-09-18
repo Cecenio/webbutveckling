@@ -1,0 +1,32 @@
+/* Inline och blockelement */
+/* h1 är ett blockelement, har bredd och höjd*/
+
+h1 {
+/*background-color: black;*/
+width: 500px;
+font-size: 64px;
+/*kolla 4.8.3-4.8.5 sid 89 för att justera texten */
+
+}
+/*inline element */
+/*först en klass, alla element som är av denna klass
+får alla somma egenskaper */
+
+.gul {
+  background-color: yellow;
+}
+.vit{
+  background-color: white;
+}
+
+.svart{
+  background-color: black;
+}
+#unikt{
+  color:blue;
+}
+body{
+    background-image: url("https://perezhilton.com/wp-content/uploads/2018/09/Jake-Logan-Paul-Dad-Greg-Paul-Sex-Tape-Leak-Hack.jpg");
+    background-size: 1920px 1080px;
+    margin: auto;
+}
