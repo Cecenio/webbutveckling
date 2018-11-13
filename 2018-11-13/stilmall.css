@@ -1,0 +1,41 @@
+body{
+  margin: 0;
+}
+
+.container{
+  display: flex;
+
+}
+
+
+
+.vanster{
+  background-color: red;
+  flex-direction: column;
+  flex-basis: 40%;
+
+}
+.hoger{
+  background-color: blue;
+  flex-direction: column;
+  flex-basis: 40%;
+}
+
+.hoger2{
+  background-color: green;
+  display flex;
+  padding: 10px;
+  flex-direction: column;
+  flex-basis: 20%;
+}
+
+.vanster, .hoger {
+display: flex;
+padding: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+.container{
+  flex-direction: column;
+}
+}
