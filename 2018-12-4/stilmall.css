@@ -1,63 +1,67 @@
 body{
-  margin: 0;
+  margin: 0;                                                            /* Fyller ut boxarna */
+   background-image: url("https://wallpapercave.com/wp/wp3400358.png"); /* Bakgrunds bild för body*/
 }
 
 .container{
-display: flex;
+  display: flex;                                                         /* Aktiverar flex commandorna för alla boxar */
+  background-color: rgba(0, 0, 0, 0.6);                                  /* Bakgrundsfärg och opacitet 0.6 på alla boxar*/
+  color: white;                                                          /* Vit färg på all text i alla boxar */
 }
 
 .vanster{
-  display: flex;
-  flex-direction: column;
-  background-color: blue;
-  font-size: 22px;
-  flex-basis: 10%;
-
+  flex-direction: column;                                                /* Så allt i i vänster lägger sig i column */
+  font-size: 22px;                                                       /* Text strolek 22 pixlar */
+  flex-basis: 10%;                                                       /* Tar upp 10% av platsen i container */
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
-    padding-right: 10px;
-    padding-top: 10px;
+    display: inline-block;                                               /* Så att rutan bryr sig om paddingen */
+    padding-right: 10px;                                                 /* Innehållet ligger 10 pixlar från höger, 35 pixlar från toppen, 15 pixlar från vänster */
+    padding-top: 30px;
+    padding-left: 15px;
+
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
+    display: none;                                                       /* Så det som finns i dropdown-content inte visas hela tiden */
+    position: absolute;                                                  /* Positionen ändras inte */
+    background-color: white;                                             /* Bakgrundsfärgen är vit */
+    min-width: 160px;                                                    /* minsta vid 160 pilxar */
+    padding: 12px 16px;                                                  /* Hur innehållet i dropdown-content ska ligga till kanten */
+    z-index: 1;                                                          /* Så att det i dropdown-content ligger över allt annat */
+    border-radius: 15px 50px 30px 5px;                                   /* Borderens firgur */
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown:hover .dropdown-content {                                      /* Om man håller över det som finns i dropdown kommer dropdown-content fram */
+display: block;                                                          /* Säger att dropdown-content ska visas i som en fyrkant */
 }
 
-
+h2{
+  color: white;                                                          /* Färgen på alla rubriker */
+  font-size: 24px;                                                       /* storleken på alla rubriker */
+}
 
 .mitten{
-  display: flex;
-  flex-direction: column;
-  background-color: red;
-  flex-basis: 60%;
+  flex-direction: column;                                                /* Det som finns i mitten ska visas i kolumn */
+  flex-basis: 60%;                                                       /* Tar upp 60% av platsen i container */
+  padding: 10px;                                                         /* Avstånd från kanten */
+
 }
 
 .hoger{
-  display: flex;
-  flex-direction: column;
-  flex-basis: 30%;
-  background-color: purple;
+  flex-direction: column;                                                /* Det som finns i höger ska visas i kolumn */
+  flex-basis: 30%;                                                       /* Tar upp 30% av platsen i container */
+  padding: 10px;                                                         /* Avstånd från kanten */
+
 }
 
 
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {                               /* När utan blir tillräckligt liten gäller det som står under */  
 .container{
-  flex-direction: column;
+  flex-direction: column;                                                /* Det som finns i container ska visas i kolumn */
 }
 }
