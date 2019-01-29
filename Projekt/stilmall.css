@@ -1,0 +1,44 @@
+body{
+  margin: 0;
+  background-color: red;
+
+}
+
+header{
+ background-color: orange;
+ align-items: center;
+ justify-content: center;
+ display: flex;
+}
+
+.meny{
+  background-color: brown;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.bakgrund{
+  display: flex;
+  flex-direction: row;
+}
+
+.vanster{
+ background-color: green;
+ flex-basis: 25%;
+}
+
+.flode{
+background-color: yellow;
+flex-basis: 50%;
+}
+
+.Updddateringar{
+  background-color: purple;
+   flex-basis: 25%;
+}
+
+.hoger{
+  background-color: blue;
+ flex-basis: 25%;
+}

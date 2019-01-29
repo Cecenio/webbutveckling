@@ -60,7 +60,7 @@ h2{
 
 
 
-@media only screen and (max-width: 800px) {                               /* När utan blir tillräckligt liten gäller det som står under */  
+@media only screen and (max-width: 800px) {                               /* När utan blir tillräckligt liten gäller det som står under */
 .container{
   flex-direction: column;                                                /* Det som finns i container ska visas i kolumn */
 }
