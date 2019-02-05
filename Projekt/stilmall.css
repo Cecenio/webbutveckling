@@ -1,7 +1,19 @@
 body{
   margin: 0;
-  background-color: red;
+  padding: 2px;
+  padding-top: 0px;
+  background-image: url(http://open-shelf.ca/wp-content/uploads/2015/03/twitter-logo-small.jpg);
+}
 
+h2{
+  font-family: 'Staatliches', cursive;
+  font-size: 32px;
+}
+
+
+h3{
+  font-size: 22px;
+  font-family: 'Karla', sans-serif;
 }
 
 header{
@@ -21,6 +33,7 @@ header{
 .bakgrund{
   display: flex;
   flex-direction: row;
+  padding: 2px;
 }
 
 .vanster{
@@ -31,14 +44,31 @@ header{
 .flode{
 background-color: yellow;
 flex-basis: 50%;
+margin: 5px;
 }
 
 .Updddateringar{
   background-color: purple;
    flex-basis: 25%;
+   border-style: inset;
+   border-radius: 10px;
+   border-color: black;
+   border-width: 5px;
 }
 
 .hoger{
   background-color: blue;
  flex-basis: 25%;
+}
+
+.statusupp{
+   width: 635px;
+   margin-bottom: 10px;
+   background-color: purple;
+   height:112px;
+   font-size: 32px;
+   font-family: 'Karla', sans-serif;
+   border-radius: 10px;
+   border-color: black;
+   border-width: 5px;
 }
