@@ -48,7 +48,7 @@ margin: 5px;
 }
 
 .Updddateringar{
-  background-color: purple;
+   background-color: purple;
    flex-basis: 25%;
    border-style: inset;
    border-radius: 10px;
@@ -74,7 +74,7 @@ margin: 5px;
 }
 
 .dropdown {
-    display: inline-block;                                              
+    display: inline-block;
     padding-right: 10px;
     padding-top: 30px;
     padding-left: 15px;
@@ -93,4 +93,14 @@ margin: 5px;
 
 .dropdown:hover .dropdown-content {
 display: block;
+}
+
+@media only screen and (max-width: 800px) {                               /* När utan blir tillräckligt liten gäller det som står under */
+.bakgrund{
+  flex-direction: column;                                                /* Det som finns i container ska visas i kolumn */
+}
+.vanster, .hoger{
+display: none
+}
+
 }
