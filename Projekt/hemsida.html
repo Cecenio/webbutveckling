@@ -20,7 +20,7 @@
 
 
 
- <div class = "meny">
+    <div class = "meny">
 
     <div class="dropdown">
       <span>Twitter</span>
@@ -61,27 +61,50 @@
 
   <div class = "vanster">
     <span> Vänster </span>
-    <iframe width="512" height="315" src="https://www.youtube.com/embed/uv2SheLDXFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="360" height="315" src="https://www.youtube.com/embed/uv2SheLDXFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
 
   <div class = "flode">
     <span> Flöde </span>
     <div class = "Updddateringar">
+<!--
       <form action="/action_page.php">
         <h3>Insert your MEMES HERE! </h3>
         <input type="text" class="statusupp" maxlength="240">
         <br>
-        <input type="button" value="Submit" >
-        <input type="file" name="myfile" />
-      </form>
+      </form> -->
+
+        <form enctype="multipart/form-data" action="http://localhost/cgi-bin/upload.php" method="post">
+        <p>
+      <h1>  Upload your meme!</h1>
+          <p>
+          </p>
+        Select File:
+        <input type="file" size="35" name="uploadedfile" />
+        <input type="submit" name="Upload" value="Upload"  />
+        </p>
+        </form>
     </div>
   </div>
 
 
   <div class = "hoger">
     <span> Höger</span>
-    <img src="https://pa1.narvii.com/6557/a526bc91c2cc1471917f894d96eead0bf78bbcc1_hq.gif" alt="">
+  <img src="https://pa1.narvii.com/6557/a526bc91c2cc1471917f894d96eead0bf78bbcc1_hq.gif" alt=""> 
+    <table>
+  <tr>
+    <th>Tja</th>
+    <th>Boi</th>
+    <th>!</th>
+  </tr>
+  <tr>
+    <td>test</td>
+    <td>test</td>
+    <td>test</td>
+  </tr>
+
+</table>
   </div>
 
 </div>

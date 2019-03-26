@@ -90,6 +90,21 @@ margin: 5px;
     border-radius: 15px 50px 30px 5px;
 }
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 
 .dropdown:hover .dropdown-content {
 display: block;
@@ -99,7 +114,11 @@ display: block;
 .bakgrund{
   flex-direction: column;                                                /* Det som finns i container ska visas i kolumn */
 }
-.vanster, .hoger{
+.bakgrund :nth-child(1) {order: 2; }
+.bakgrund :nth-child(2) {order: 1; }
+.bakgrund :nth-child(3) {order: 3; }
+
+.hoger{
 display: none
 }
 
