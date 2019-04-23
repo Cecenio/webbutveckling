@@ -11,45 +11,38 @@
 
 </head>
 
-<body>
+<body onload="skrivnamn()">
 
-
-<header>
-<h2> Ultimate MEME PAGE!</h2>
-</header>
+<div class="bakgrund">
+  <img src="bakgrund.png" id="bakgrund">
+</div>
 
 
 
     <div class = "meny">
 
     <div class="dropdown">
-      <span>Twitter</span>
+      <span>Our Twitter</span>
       <div class="dropdown-content">
         <p><a href="https://twitter.com/cecenioo">@Cecenioo</a></p>
       </div>
     </div>
     <div class="dropdown">
-      <span>Twitter</span>
+      <span>Our Youtube</span>
       <div class="dropdown-content">
-        <p><a href="https://twitter.com/cecenioo">@Cecenioo</a></p>
+        <p><a href="https://www.youtube.com/channel/UCdMQHzIVWcD-JK2s9MqLc9Q">@Cecenio</a></p>
       </div>
     </div>
     <div class="dropdown">
-      <span>Twitter</span>
+      <span>Our Twitch</span>
       <div class="dropdown-content">
-        <p><a href="https://twitter.com/cecenioo">@Cecenioo</a></p>
+        <p><a href="https://www.twitch.tv/cecenio">@Cecenio</a></p>
       </div>
     </div>
     <div class="dropdown">
-      <span>Twitter</span>
+      <span>FAQ</span>
       <div class="dropdown-content">
-        <p><a href="https://twitter.com/cecenioo">@Cecenioo</a></p>
-      </div>
-    </div>
-    <div class="dropdown">
-      <span>Twitter</span>
-      <div class="dropdown-content">
-        <p><a href="https://twitter.com/cecenioo">@Cecenioo</a></p>
+        <p><a href="https://twitter.com/cecenioo">@Cecenio</a></p>
       </div>
     </div>
 
@@ -60,13 +53,12 @@
 
 
   <div class = "vanster">
-    <span> Vänster </span>
-    <iframe width="360" height="315" src="https://www.youtube.com/embed/uv2SheLDXFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2> Daily Funny Video! </h2>
+    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/uv2SheLDXFM" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
 
   <div class = "flode">
-    <span> Flöde </span>
     <div class = "Updddateringar">
 <!--
       <form action="/action_page.php">
@@ -77,7 +69,7 @@
 
         <form enctype="multipart/form-data" action="http://localhost/cgi-bin/upload.php" method="post">
         <p>
-      <h1>  Upload your meme!</h1>
+      <h1> Upload your meme!</h1>
           <p>
           </p>
         Select File:
@@ -90,8 +82,8 @@
 
 
   <div class = "hoger">
-    <span> Höger</span>
-  <img src="https://pa1.narvii.com/6557/a526bc91c2cc1471917f894d96eead0bf78bbcc1_hq.gif" alt=""> 
+    <h2> Daily GIF! </h2>
+    <img src="https://techcrunch.com/wp-content/uploads/2015/08/safe_image.gif?w=730&crop=1" " width="50%"">
     <table>
   <tr>
     <th>Tja</th>
@@ -112,4 +104,10 @@
 
 
 </body>
+<script>
+function skrivnamn() {
+  var person = prompt("Please enter your name", "");
+
+}
+</script>
    </html>
