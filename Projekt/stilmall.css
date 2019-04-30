@@ -1,6 +1,7 @@
 body{
 background-color: #464D5C;
 color: white;
+min-height: 100vh;
 }
 
 span{
@@ -10,7 +11,7 @@ span{
 #bakgrund{
 position: absolute;
 left: 50%;
-top: 20%;
+top: 45%;
 transform: translateX(-50%);
 z-index: -1;
 }
@@ -26,12 +27,6 @@ h3{
   font-family: 'Karla', sans-serif;
 }
 
-header{
- background-color: orange;
- align-items: center;
- justify-content: center;
- display: flex;
-}
 
 .meny{
   background-color: #F7DDA4;
@@ -39,37 +34,52 @@ header{
   justify-content: center;
   display: flex;
   color: black;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 5px;
+   border-style: inset;
 }
 
-.bakgrund{
+ .bakgrund{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .vanster{
  flex-basis: 25%;
+ text-align: center;
 }
 
-.flode{
-flex-basis: 50%;
-margin: 5px;
-}
 
 .Updddateringar{
    background-color: #F7DDA4;
-   flex-basis: 25%;
+   flex-basis: 50%;
    border-style: inset;
-   border-radius: 10px;
+   border-radius: 5px;
    border-color: black;
    border-width: 5px;
    color: black;
+   margin: 5px;
+   text-align: center;
+   height: 50%;
+}
+
+footer{
+background-color: red;
+color: white;
+text-align: center;
+width: 100%;
+position: sticky;
+bottom: 0;
 }
 
 .hoger{
  flex-basis: 25%;
+ text-align: center;
+ padding-top: 500px;
 }
 
-.statusupp{
+/* .statusupp{
    width: 635px;
    margin-bottom: 10px;
    background-color: purple;
@@ -79,7 +89,7 @@ margin: 5px;
    border-radius: 10px;
    border-color: black;
    border-width: 5px;
-}
+} */
 
 .dropdown {
     display: inline-block;
@@ -119,9 +129,12 @@ display: block;
 }
 
 @media only screen and (max-width: 800px) {                               /* När utan blir tillräckligt liten gäller det som står under */
-.bakgrund{
-  flex-direction: column;                                                /* Det som finns i container ska visas i kolumn */
+
+#bakgrund{
+  width: 100%;
+  height: auto;
 }
+
 .bakgrund :nth-child(1) {order: 2; }
 .bakgrund :nth-child(2) {order: 1; }
 .bakgrund :nth-child(3) {order: 3; }

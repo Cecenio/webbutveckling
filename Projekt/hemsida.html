@@ -1,11 +1,12 @@
 <!DOCTYPE html>
- <html lang = "sv">
- <head>
-   <meta charset="utf-8" />
-   <link href="stilmall.css" rel="stylesheet" type="text/css">
-   <meta name ="viewport" content="width=device-width, inital-scale=1.0">
-   <link href="https://fonts.googleapis.com/css?family=Karla|Staatliches" rel="stylesheet">
- <title> Copy Twitter </title>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8" />
+  <link href="stilmall.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Karla|Staatliches" rel="stylesheet">
+  <title> Copy Twitter </title>
 
 
 
@@ -13,13 +14,12 @@
 
 <body onload="skrivnamn()">
 
-<div class="bakgrund">
   <img src="bakgrund.png" id="bakgrund">
-</div>
 
 
 
-    <div class = "meny">
+
+  <div class="meny">
 
     <div class="dropdown">
       <span>Our Twitter</span>
@@ -49,65 +49,67 @@
   </div>
 
 
-<div class = "bakgrund">
+  <div class="bakgrund">
 
+    <div class="Updddateringar">
 
-  <div class = "vanster">
-    <h2> Daily Funny Video! </h2>
-    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/uv2SheLDXFM" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-
-
-  <div class = "flode">
-    <div class = "Updddateringar">
-<!--
-      <form action="/action_page.php">
+      <!--  <form action="/action_page.php">
         <h3>Insert your MEMES HERE! </h3>
         <input type="text" class="statusupp" maxlength="240">
         <br>
       </form> -->
 
-        <form enctype="multipart/form-data" action="http://localhost/cgi-bin/upload.php" method="post">
+      <form enctype="multipart/form-data" action="http://localhost/cgi-bin/upload.php" method="post">
         <p>
-      <h1> Upload your meme!</h1>
+          <h1> Upload your meme!</h1>
           <p>
           </p>
-        Select File:
-        <input type="file" size="35" name="uploadedfile" />
-        <input type="submit" name="Upload" value="Upload"  />
+          Select File:
+          <input type="file" size="35" name="uploadedfile" />
+          <input type="submit" name="Upload" value="Upload" />
         </p>
-        </form>
+      </form>
     </div>
+
+
+    <div class="vanster">
+      <h2> Daily Funny Video! </h2>
+      <iframe width="50%" height="70%" src="https://www.youtube.com/embed/FLk629R3oG0" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
+
+    <div class="hoger">
+      <h2> Daily GIF! </h2>
+      <img src="https://techcrunch.com/wp-content/uploads/2015/08/safe_image.gif?w=730&crop=1" " width=" 50%"">
+      <table>
+        <tr>
+          <th>Tja</th>
+          <th>Boi</th>
+          <th>!</th>
+        </tr>
+        <tr>
+          <td>test</td>
+          <td>test</td>
+          <td>test</td>
+        </tr>
+
+      </table>
+    </div>
+
   </div>
 
-
-  <div class = "hoger">
-    <h2> Daily GIF! </h2>
-    <img src="https://techcrunch.com/wp-content/uploads/2015/08/safe_image.gif?w=730&crop=1" " width="50%"">
-    <table>
-  <tr>
-    <th>Tja</th>
-    <th>Boi</th>
-    <th>!</th>
-  </tr>
-  <tr>
-    <td>test</td>
-    <td>test</td>
-    <td>test</td>
-  </tr>
-
-</table>
-  </div>
-
-</div>
-
-
+  <footer>
+    <h2> SUPREME </h2>
+  </footer>
 
 </body>
 <script>
-function skrivnamn() {
-  var person = prompt("Please enter your name", "");
+  function skrivnamn() {
+    var person = prompt("Please enter your name", "");
 
-}
+  }
 </script>
-   </html>
+
+</html>
