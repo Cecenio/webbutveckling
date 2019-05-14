@@ -1,15 +1,11 @@
 h1{
-  color: white;
   font font-size: 32px;
-  text-align: center;
-  font-family: 'Roboto', sans-serif
+  font-family: 'Roboto', sans-serif;
 }
 
 h2{
-  color: white;
   font font-size: 18px;
-  text-align: center;
-  font-family: 'Roboto', sans-serif
+  font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -18,27 +14,21 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: white;
+  text-align: center;
 }
 
-
-#bakgrund{
-  position: absolute;
-  left: 50%;
-  top: 56%;
-  transform: translateX(-50%);
-  z-index: -1;
+a{
+  color: #14E7FE;
 }
 
 table{
-  color: white;
-    font-family: arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     border-collapse: collapse;
-      text-align: center;
   }
 
   td, th {
-    border: 1px solid #dddddd;
-    text-align: center;
+    border: 2px solid #dddddd;
     padding: 8px;
   }
 
@@ -46,11 +36,3 @@ table{
     background-color: #dddddd;
     color: #464D5C;
   }
-
-@media only screen and (max-width: 800px) {                               /* När rutan blir tillräckligt liten gäller det som står under */
-  #bakgrund{
-    width: 100%;
-    height: auto;
-      top: 15%;
-  }
-}
