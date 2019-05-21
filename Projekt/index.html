@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8" />
+  <link href="stilmall.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Karla|Staatliches" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title> MemesNet </title>
+
+
+
+</head>
+
+<body onload="skrivnamn()">
+
+  <img src="bakgrund.png" id="bakgrund">
+
+  <div class="meny">
+
+    <div class="dropdown">
+      <span>Twitter</span>
+      <div class="dropdown-content">
+        <p><a href="https://twitter.com/cecenioo">@Cecenioo</a></p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <span>Youtube</span>
+      <div class="dropdown-content">
+        <p><a href="https://www.youtube.com/channel/UCdMQHzIVWcD-JK2s9MqLc9Q">@Cecenio</a></p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <span>Twitch</span>
+      <div class="dropdown-content">
+        <p><a href="https://www.twitch.tv/cecenio">@Cecenio</a></p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <span>FAQ</span>
+      <div class="dropdown-content">
+        <a href="FAQ.html"> MemeNetFAQ </a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="huvudbox">
+
+    <div class="upload">
+
+      <form enctype="multipart/form-data" action="http://localhost/cgi-bin/upload.php" method="post">
+        <p>
+          <h1> Upload your Meme!</h1>
+          Select File:
+          <input type="file" size="35" name="uploadedfile" />
+          <input type="submit" name="Upload" value="Upload" />
+        </p>
+      </form>
+    </div>
+
+
+    <div class="box1">
+      <h2> Daily Funny Video! </h2>
+      <iframe width="50%" height="70%" src="https://www.youtube.com/embed/FLk629R3oG0" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="box2">
+      <h2> Daily GIF! </h2>
+      <img src="https://techcrunch.com/wp-content/uploads/2015/08/safe_image.gif?w=730&crop=1" " width=" 50%"">
+    </div>
+
+  </div>
+
+  <footer>
+    <h3> Kontaktuppgifter: </h3>
+    <span> Caesar.brag@gmail.com <br>
+      +46701337420</span>
+  </footer>
+
+</body>
+<script>
+  function skrivnamn() {
+    var person = prompt("Please enter your name", "");
+
+  }
+</script>
+
+</html>
